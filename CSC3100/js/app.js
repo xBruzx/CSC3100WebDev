@@ -58,6 +58,15 @@ document.querySelector('#btnReturn').addEventListener('click', ()=> {
 
 })
 
+document.querySelector('#btnRegisterAcc').addEventListener('click', ()=> {
+    Swal.fire({
+        title: "Success",
+        text: "Congrats you have registered!",
+        icon: "Success",
+    })
+
+})
+
 //Other variable decleration
 var strTest = `This is a globally scoped variable` 
 let strtest2 = "This is a locally scoped variable"
