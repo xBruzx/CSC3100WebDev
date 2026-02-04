@@ -26,8 +26,8 @@ document.querySelector('#btnLogin').addEventListener('click', ()=>{
     const strEmail = document.querySelector('#txtEmail').value
     const strPassword = document.querySelector('#txtPassword').value
     //regx email should go here but I get an error when I do the slashes at the front
-    strEmail = strEmail.trim()
-    strPassword = strPassword.trim()
+    //strEmail = strEmail.trim()
+    //strPassword = strPassword.trim()
     //One way to concat a litteral string with a variable
     //console.log('Email from login form: ' + strEmail)
 
@@ -38,6 +38,35 @@ document.querySelector('#btnLogin').addEventListener('click', ()=>{
       text: "Congratulations you are now logged in",
       icon: "Success"
     });
+    let arrAnimals = ['Hippo', 'Penguin', 'Otter']
+    console.log(arrAnimals)
+    console.log(arrAnimals.length)
+    console.log(arrAnimals[1])
+    let objHippo = {
+        name: 'Hippo',
+        size: 'Large',
+        speed: 'Fast',
+        environment: {
+            temperature: 'hot',
+            humidity: 'high',
+            moisture: 'Wet'
+        }
+    }
+
+    let objOtter = {
+        name: 'Otter',
+        size: 'Small',
+        speed: 'Fast',
+        environment: 'River'
+    }
+    
+    arrAnimals.push('duck', 'bat')
+    console.log(arrAnimals)
+    console.log(objHippo)
+    console.log(objOtter)
+
+    let arrAnimalObjs = [objHippo, objOtter]
+    console.log(arrAnimalObjs)
 
     //using template litterals 
     console.log(`Email from login form ${strEmail}`)
